@@ -48,5 +48,11 @@
   "homepage": "https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-workspace-flow",
   "bugs": {
     "url": "https://github.com/wang678678/dsh-local-plugins/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
   }
 }
