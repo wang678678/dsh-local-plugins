@@ -1,0 +1,42 @@
+{
+  "name": "dsh-market-autogroup",
+  "version": "0.1.0",
+  "description": "启动时把已安装插件按类别补进 dshmarket 分组，保持分组完整。 / Automatically group installed plugins in dshmarket on startup.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "market",
+    "groups"
+  ],
+  "author": "wang678678",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wang678678/dsh-local-plugins.git",
+    "directory": "packages/dsh-market-autogroup"
+  },
+  "homepage": "https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-market-autogroup",
+  "bugs": {
+    "url": "https://github.com/wang678678/dsh-local-plugins/issues"
+  }
+}
