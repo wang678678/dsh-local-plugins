@@ -1,7 +1,7 @@
 {
   "name": "dsh-doc-routing-guard",
-  "version": "0.1.1",
-  "description": "全局文档路由提示：PDF/图片先 ocr_read，Office 用 office 技能，知识库引用标注来源。 / Global document-routing prompt for DSH: ocr_read for PDF/images, office skills for Office files, cited knowledge snippets.",
+  "version": "0.1.2",
+  "description": "全局文档路由提示：ocr_read/doc_route 可用时优先，Office 用 office 技能，缺失时退到内置 read_document/office-render。 / Global document-routing prompt for DSH: prefer ocr_read/doc_route when available, fall back to built-in read_document/office-render.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -40,8 +40,5 @@
   "homepage": "https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-doc-routing-guard",
   "bugs": {
     "url": "https://github.com/wang678678/dsh-local-plugins/issues"
-  },
-  "engines": {
-    "dsh": ">=0.2.0-rc.1 <0.3.0"
   }
 }

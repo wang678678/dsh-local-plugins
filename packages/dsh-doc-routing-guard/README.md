@@ -1,8 +1,8 @@
 # dsh-doc-routing-guard
 
-全局文档路由提示：PDF/图片先 ocr_read，Office 用 office 技能，知识库引用标注来源。
+全局文档路由提示：ocr_read/doc_route 可用时优先，Office 用 office 技能，缺失时退到内置 read_document/office-render。
 
-Global document-routing prompt for DSH: ocr_read for PDF/images, office skills for Office files, cited knowledge snippets.
+Global document-routing prompt for DSH: prefer ocr_read/doc_route when available, fall back to built-in read_document/office-render.
 
 ## Install
 

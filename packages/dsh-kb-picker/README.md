@@ -1,8 +1,8 @@
 # dsh-kb-picker
 
-DSH 输入框增强：知识库选择器（dsh-knowledge）+ 原生附件回形针。
+DSH 输入框增强：知识库选择器（依赖 dsh-knowledge，未安装时会提示）+ 原生附件回形针。
 
-Composer controls for DeepSeek Harness: knowledge-base picker and native-attachment paperclip.
+Composer controls for DeepSeek Harness: knowledge-base picker (requires dsh-knowledge) and native-attachment paperclip.
 
 ## Install
 

@@ -1,7 +1,7 @@
 {
   "name": "dsh-kb-picker",
-  "version": "0.2.0",
-  "description": "DSH 输入框增强：知识库选择器（dsh-knowledge）+ 原生附件回形针。 / Composer controls for DeepSeek Harness: knowledge-base picker and native-attachment paperclip.",
+  "version": "0.2.1",
+  "description": "DSH 输入框增强：知识库选择器（依赖 dsh-knowledge，未安装时会提示）+ 原生附件回形针。 / Composer controls for DeepSeek Harness: knowledge-base picker (requires dsh-knowledge) and native-attachment paperclip.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -22,19 +22,18 @@
     }
   },
   "peerDependencies": {
-    "react": ">=18"
+    "react": "^18.2.0"
   },
   "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "knowledge-base",
+    "attachment",
+    "composer"
+  ],
   "author": "wang678678",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wang678678/dsh-local-plugins.git",
-    "directory": "packages/dsh-kb-picker"
-  },
-  "homepage": "https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-kb-picker",
-  "bugs": {
-    "url": "https://github.com/wang678678/dsh-local-plugins/issues"
-  },
   "files": [
     "lib",
     "cordis.patch.yml",
@@ -44,7 +43,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "engines": {
-    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wang678678/dsh-local-plugins.git",
+    "directory": "packages/dsh-kb-picker"
+  },
+  "homepage": "https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-kb-picker",
+  "bugs": {
+    "url": "https://github.com/wang678678/dsh-local-plugins/issues"
   }
 }

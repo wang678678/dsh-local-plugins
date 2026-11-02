@@ -116,7 +116,7 @@ window.__ModuleLoader__.load({ id: 'dsh-kb-picker', factory: (require) => {
       }
       if (!basesRef.current.length) {
         var empty = document.createElement('div');
-        empty.textContent = '没有知识库';
+        empty.textContent = err ? ('加载失败：' + err) : '未检测到知识库。请先安装 dsh-knowledge 并建库。';
         empty.style.cssText = 'padding:8px;font-size:12px;opacity:.6';
         el.appendChild(empty);
         return;
@@ -167,7 +167,10 @@ window.__ModuleLoader__.load({ id: 'dsh-kb-picker', factory: (require) => {
 
     function ensureBases() {
       if (basesRef.current !== null) return;
-      fetch('/knowledge/bases').then(function (r) { return r.json(); }).then(function (j) {
+      fetch('/knowledge/bases').then(function (r) {
+        if (!r.ok) throw new Error(r.status === 404 ? '未检测到 dsh-knowledge（/knowledge/bases 404）' : ('HTTP ' + r.status));
+        return r.json();
+      }).then(function (j) {
         var list = (j && j.value) || [];
         basesRef.current = list.map(function (b) {
           return { id: b.id, name: b.name, count: (b.documentCount != null ? b.documentCount : b.storedDocCount) || 0 };
