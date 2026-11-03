@@ -1,6 +1,6 @@
 {
   "name": "dsh-doc-routing-guard",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "全局文档路由提示：ocr_read/doc_route 可用时优先，Office 用 office 技能，缺失时退到内置 read_document/office-render。 / Global document-routing prompt for DSH: prefer ocr_read/doc_route when available, fall back to built-in read_document/office-render.",
   "type": "module",
   "main": "lib/index.js",
