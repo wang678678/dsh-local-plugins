@@ -1,6 +1,6 @@
 {
   "name": "dsh-kb-picker",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "DSH 输入框增强：知识库选择器（依赖 dsh-knowledge，未安装时会提示）+ 原生附件回形针。 / Composer controls for DeepSeek Harness: knowledge-base picker (requires dsh-knowledge) and native-attachment paperclip.",
   "type": "module",
   "main": "lib/index.js",
